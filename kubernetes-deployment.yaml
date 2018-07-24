@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: sidecar-proxy
-        image: nginx-sidecar-proxy
-        imagePullPolicy: IfNotPresent
+        image: eicnix/sidecar-proxy-example-sidecar-proxy
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
       - name: application
-        image: sidecar-app
-        imagePullPolicy: IfNotPresent
+        image: eicnix/sidecar-proxy-example
+        imagePullPolicy: Always
